@@ -1,0 +1,59 @@
+/* ImageSlide.module.scss */
+
+.mySwiper2 {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+
+    .swiper-slide {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide-img-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.mySwiper {
+    display: flex;
+    height: 150px;
+    padding: 10px 0;
+
+    .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+        
+
+        &.swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .swiper-slide-thumb-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .swiper-slide-thumb {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

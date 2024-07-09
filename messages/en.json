@@ -1,0 +1,163 @@
+{
+  "lang": "EN",
+  "hospital": "Krung Siam St. Carlos Medical Centre",
+  "navigation": {
+    "home": "Home",
+    "promotion": "Package and Promotion",
+    "service": "Service",
+    "about": "About Us",
+    "appointment": "Make an Appointment",
+    "contact": "Contact Us"
+  },
+  "error": {
+    "title": "Page Not Found",
+    "btn": "Go Home"
+  },
+  "footer": {
+    "header": "Service",
+    "appointment": "Make an Appointment",
+    "clinic": "Medical Center & Clinic",
+    "checkup": "Check-Up Center",
+    "spa": "St. Carlos Medical Spa",
+    "rehab": "Rehabilitation and Extended Care Centre",
+    "patient": "Patient Service",
+    "accommodation": "Accommodation",
+    "about": "About Us",
+    "service": "Service",
+    "vision": "Vision Mission",
+    "history": "History",
+    "team": "Our Medical Team",
+    "awards": "Awards Received",
+    "news": "News and Public Relations",
+    "health_info": "Health Information",
+    "data_policy": "Data Protection Policies",
+    "cctv_policy": "CCTV and Recording System Policy",
+    "cookie_policy": "Cookie Policy",
+    "contact": "Contact",
+    "history_desc": "Krung Siam St. Carlos Medical Centre offers a team of reputable doctors, specialists and consultants from the Faculty of Medicine at Thammasat University, as well as several government hospitals.Its experienced medical personnel are always on call 24 hours a day.",
+    "address": "5/84 Moo 2 Tiwanon Road, Banklang, Amphur Muang, Phathumthani 12000"
+  },
+  "package": {
+    "rec": "Recommended package"
+  },
+  "read": "Readmore",
+  "price": "Price",
+  "thb": "THB",
+  "more": "See More",
+  "relevant_promo": "Related Promotion",
+  "relevant_doctor": "Attending physician",
+  "modal": {
+    "rec_pkg": "Recommend Package",
+    "new_pkg": "New Promotion",
+    "more": "more"
+  },
+  "section": {
+    "service": "Our Service",
+    "promo": "Package and Promotion",
+    "info": "Health Info",
+    "clinic": "Clinic & Department"
+  },
+  "icon_btn": {
+    "MA": "Make an Appointment",
+    "TC": "Treatment and Clinic",
+    "CC": "Check-up Center",
+    "AC": "Accommodation",
+    "EM": "Emergency",
+    "AS": "All Services",
+    "PC": "Pediatric 24-Hours",
+    "WH": "Women's Health Center",
+    "GSC": "General Surgery Clinic",
+    "KC": "Hemodialysis Center",
+    "BNSDC": "Brain and Nervous System Disorders Center",
+    "DC": "Dental Clinic",
+    "ENTC": "ENT Clinic",
+    "GC": "Geriatric Clinic",
+    "ASC": "Aesthetic Surgery Center",
+    "OJSC": "Orthopedic and Joint Surgery Clinic",
+    "PTC": "Physical Therapy Clinic",
+    "DC2": "Dermatology Clinic",
+    "SPA": "St. Carlos Medical Spa",
+    "RECC": "St.Carlos RECC"
+  },
+  "contact": {
+    "head": "Contact Us",
+    "name": "First Name - Last Name",
+    "email": "Email",
+    "phone": "Tel",
+    "detail": "Detail",
+    "submit": "Submit",
+    "map": "Map",
+    "validation": {
+      "name": "Name Required",
+      "email": "Email Required",
+      "email_invalid": "Email Invalid Format",
+      "phone": "Phone Required",
+      "phone_invalid": "Phone Invalid Format",
+      "detail": "Detail Required"
+    }
+  },
+  "search": {
+    "label": "Search",
+    "query": "Search Package",
+    "filter": "Service Center"
+  },
+  "vision": {
+    "vision": "Vision",
+    "visiondet": "await",
+    "mission": "Mission",
+    "missiondet": "await",
+    "values": "Values",
+    "value_list": {
+      "customer": "Customer focus",
+      "integrity": "Integrity",
+      "rapid": "Rapid Response",
+      "team": "Team Work",
+      "efficiency": "Efficiency",
+      "continuous": "Continuous Performance Improvement"
+    }
+  },
+  "history": {
+    "history": "History",
+    "1": "1987 St. Carlos group first began as “Suthipron Clinic” in Bangkok for both inpatient and weight loss patients.",
+    "2": "1988 “Pahdipat Poly Clinic” was established in Bangkok for both inpatient and weight loss consultation.",
+    "3": "1989 “Sutjarit Poly Clinic” was established in Bangkok for both inpatient and weight loss consultation.",
+    "4": "1993 Bangkok Mediclub Center was established in Bangkok.",
+    "5": "1995 Krungsiam Medical Center & Medical Spa were established and located in the suburbs of Bangkok,Phatumtanee.",
+    "6": "1997 St. Carlos Laboratory Co., Ltd was established for science research and production of products for both local and international markets.",
+    "7": "1998 St Carlos Phama International Company was established in Philippines as weight loss production center for distribution worldwide.",
+    "8": ""
+  },
+  "popup": {
+    "thank": "Thank You!",
+    "submission": "Your submission has been received."
+  },
+  "tab": {
+    "EM": "Emergency Department"
+  },
+  "AboutUs": {
+    "head": "About Us",
+    "text-1": "Built in 1994, the Krung Siam St. Carlos Medical Centre has developed into one of the largest medical centers in Thailand with a fully equipped state-of-the-art medical facilities located in the suburbs of Bangkok. It houses Asia’s first integrated medical spa, health center, and the head office of the St. Carlos Group of Health Services. The Centre is a modern private 10-storey hospital with 100 beds and a convenient car park for up to 200 cars. It is located on 14,000 square meters of land on Tiwanon Road, Banklang, Amper Muang, Pathumthani province just 27 kilometers from Bangkok. There is easy access to the vibrant city center. The new Future Park, the largest shopping centerand entertainment complex in Asia, is seven kilometers away. Nearby are the famous tourist attractions of the Bang Pa-In Summer Palace and the ancient city of Ayutthaya. The hospital provides health services and information to the local communities.",
+    "text-2": "",
+    "text-3": ""
+  },
+  "Awards": {
+    "head": "Awards Received",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": "",
+    "10": "",
+    "11": "",
+    "12": ""
+  },
+  "Accommodatiom": {
+    "VII": "7th Floor",
+    "IV": "4th Floor",
+    "ACR": "Intensive care unit"
+  }
+}

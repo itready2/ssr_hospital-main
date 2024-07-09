@@ -1,0 +1,53 @@
+.head{
+    font-size: 24pt;
+    text-align: left;
+}
+
+.slide_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.title_layout {
+    margin: 1.5rem 0 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    & h3 {
+        font-size: x-large;
+    }
+
+    & div {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .title_layout {
+        & h3 {
+            font-size: large;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .title_layout {
+        & h3 {
+            font-size: medium;
+        }
+    }
+    .banner-swiper {
+        aspect-ratio: 3/1;
+        display: flex;
+        width: 100%;
+    }
+}

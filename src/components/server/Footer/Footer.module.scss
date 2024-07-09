@@ -1,0 +1,173 @@
+$primary-color: #09b15a; // ตัวแปรสีหลัก
+$secondary-color: #01a04e; // ตัวแปรสีรอง
+$text-color: white; // ตัวแปรสีข้อความ
+
+.footer {
+  display: block;
+  width: 100%;
+  background-color: $secondary-color; // ใช้ตัวแปรสีรองในพื้นหลัง footer
+}
+
+.gridlayout {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  width: 100%;
+  background-color: $primary-color; // ใช้ตัวแปรสีหลักในพื้นหลัง gridlayout
+  padding: 1.5rem 18%;
+}
+
+.gridItem {
+  flex-direction: column;
+  flex: 1;
+  display: flex;
+
+  & h2 {
+    color: $text-color; // ใช้ตัวแปรสีข้อความ
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  & p {
+    color: $text-color; // ใช้ตัวแปรสีข้อความ
+    font-size: 10pt;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    color: $text-color; // ใช้ตัวแปรสีข้อความ
+    gap: 6px;
+
+    & li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      & a {
+        color: $text-color;
+        text-decoration: none;
+        font-size: 10pt;
+      }
+    }
+  }
+
+  & .link {
+    & li {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    & p {
+      width: 90%;
+      font-size: 10pt;
+      cursor: pointer;
+      display: inline-block;
+      color: $text-color;
+      text-decoration: none;
+    }
+
+    & .icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    & a {
+      display: flex;
+      color: $text-color;
+      text-decoration: none;
+      font-size: 10pt;
+      gap: 8px;
+      align-items: center;
+    }
+  }
+}
+
+.bottom {
+  background-color: $secondary-color;
+  padding: 1.5rem 18%;
+
+  & p {
+    font-size: 10pt;
+    color: $text-color; // ใช้ตัวแปรสีข้อความ
+
+    & a {
+      text-decoration: none;
+      color: $text-color;
+      font-size: 10pt;
+    }
+  }
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .gridItem {
+    & h2 {
+      font-size: 14pt;
+    }
+
+    & p {
+      font-size: 10pt;
+    }
+
+    & hr {
+      margin: 4px 0;
+    }
+
+    & ul {
+      gap: 4px;
+
+      & li {
+        font-size: 10pt;
+        gap: 4px;
+      }
+    }
+  }
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  .gridlayout {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .gridItem {
+    & h2 {
+      font-size: 14pt;
+    }
+
+    & p {
+      font-size: 8pt;
+    }
+
+    & hr {
+      margin: 4px 0;
+    }
+
+    & ul {
+      gap: 4px;
+
+      & li {
+        font-size: 8pt;
+        gap: 4px;
+      }
+    }
+  }
+
+  .bottom {
+    padding-left: 1rem;
+
+    & p {
+      font-size: xx-small;
+
+      & a {
+        font-size: xx-small;
+      }
+    }
+  }
+}

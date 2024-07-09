@@ -1,0 +1,13 @@
+$banner-raitio: 3/1;
+
+.banner-swiper {
+    aspect-ratio: $banner-raitio;
+    width: 100%;
+    height: auto;
+}
+
+.banner {
+    width: 100%;
+    aspect-ratio: $banner-raitio;
+    object-fit: cover;
+}

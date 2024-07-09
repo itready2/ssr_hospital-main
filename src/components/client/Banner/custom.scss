@@ -1,0 +1,10 @@
+$main-color: #096b17;
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: $main-color;
+}
+
+.swiper-pagination-bullet {
+    background-color: $main-color;
+}

@@ -1,0 +1,106 @@
+$gradient-text: -webkit-linear-gradient(right, #61b42c, #006738);
+
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & h1 {
+        font-size: 20pt;
+        background: $gradient-text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+.more {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+    background: $gradient-text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    .icon {
+        color: #076c3d;
+    }
+}
+
+.pr_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        & h1 {
+            font-size: medium;
+        }
+
+        & a {
+            display: flex;
+            align-items: center;
+            font-size: small;
+            font-weight: 800;
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        & h1 {
+            font-size: medium;
+        }
+
+        & a {
+            display: flex;
+            align-items: center;
+            font-size: smaller;
+            font-weight: 800;
+            text-decoration: none;
+            color: black;
+        }
+    }
+    
+    .pr_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 8px;
+    }
+
+}

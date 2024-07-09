@@ -1,0 +1,125 @@
+$main-color: #086a38;
+$background-color: #fff;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease;
+    justify-content: flex-start;
+    cursor: pointer;
+    background-color: $background-color;
+    text-decoration: none;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.image-container {
+    aspect-ratio: 16/9;
+    width: 100%;
+
+    & img {
+        aspect-ratio: 16/9;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+}
+
+.button {
+    width: 100%;
+    background-color: $main-color;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+
+    & p {
+        color: white;
+    }
+}
+
+.capsule {
+    padding: 4px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    border-radius: 100px;
+}
+
+.desc {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 9em;
+    padding: 8px;
+}
+
+.title {
+    color: black;
+    font-size: 12pt;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.paragraph {
+    font-size: 10pt;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.date {
+    font-size: medium;
+    color: #a1a1a1;
+    border-radius: 100px;
+    text-wrap: wrap;
+    width: max-content;
+    font-size: 8pt;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .button {
+        padding: 4px;
+        border-radius: 8px;
+
+        & p {
+            font-size: small;
+        }
+    }
+
+    .paragraph {
+        font-size: 8pt;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 0;
+    }
+
+    .price {
+        font-size: 8pt;
+    }
+
+    .title {
+        font-size: 10pt;
+    }
+}
