@@ -22,23 +22,13 @@ const Product_Modal: React.FC<product_modal> = ({ rec_pkg, new_pkg, more, locale
   useEffect(() => {
     async function getData() {
 
-      const storedPopular = sessionStorage.getItem('popular');
-      const storedNewest = sessionStorage.getItem('newest');
-
-      if (storedPopular && storedNewest) {
-        SetPopular(JSON.parse(storedPopular));
-        SetNewest(JSON.parse(storedNewest));
-      } else {
         const promotion = new getPromotion();
         const getPular = await promotion.getTop();
         const getNewest = await promotion.getNewest();
 
         SetPopular(getPular);
         SetNewest(getNewest);
-
-        sessionStorage.setItem('popular', JSON.stringify(getPular));
-        sessionStorage.setItem('newest', JSON.stringify(getNewest));
-      }
+      
     }
     getData()
   }, [])
