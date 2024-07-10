@@ -28,6 +28,7 @@ export default class getPromotion {
             const response = await axios.get(`${process.env.NEXT_PUBLIC_END_POINT}/promotion?important=true&page=1&size=3` , {
                 headers: {
                     "Content-Type": "application/json",
+                    "ngrok-skip-browser-warning":"any"
                 },
             });
             const promotions: PromotionProps[] = response.data;
@@ -44,6 +45,7 @@ export default class getPromotion {
             const response = await axios.get(`${process.env.NEXT_PUBLIC_END_POINT}/promotion?new=true&size=3` , {
                 headers: {
                     "Content-Type": "application/json",
+                    "ngrok-skip-browser-warning":"any"
                 },
             });
             const promotions: PromotionProps[] = response.data;
