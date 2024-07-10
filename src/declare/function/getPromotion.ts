@@ -24,7 +24,12 @@ export default class getPromotion {
 
     async getTop(): Promise<PromotionProps[] | null> {
         try {
-            const response = await axios.get(`${process.env.NEXT_PUBLIC_END_POINT}/promotion?important=true&page=1&size=3`);
+            // const response = await axios.get(`${process.env.NEXT_PUBLIC_END_POINT}/promotion?important=true&page=1&size=3`);
+            const response = await axios.get(`${process.env.NEXT_PUBLIC_END_POINT}/promotion?important=true&page=1&size=3` , {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
             const promotions: PromotionProps[] = response.data;
             return promotions
         } catch (error) {
@@ -35,7 +40,12 @@ export default class getPromotion {
 
     async getNewest(): Promise<PromotionProps[] | null> {
         try {
-            const response = await axios.get(`${process.env.NEXT_PUBLIC_END_POINT}/promotion?new=true&size=3`);
+            // const response = await axios.get(`${process.env.NEXT_PUBLIC_END_POINT}/promotion?new=true&size=3`);
+            const response = await axios.get(`${process.env.NEXT_PUBLIC_END_POINT}/promotion?new=true&size=3` , {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
             const promotions: PromotionProps[] = response.data;
             return promotions
         } catch (error) {
